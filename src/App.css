@@ -1,0 +1,242 @@
+body{
+    background-image: url("./resources/background.svg");
+}
+
+.card{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+input{
+    border:0;
+    border-bottom:1px solid #555;  
+    background:transparent;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+}
+
+.black-text-box{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+textarea{
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 75%;
+    background-color: white;
+    resize: none;
+}
+
+.blue-text-box{
+    background-color: #0073FF;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.button {
+    background-color: #0073FF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.post-button{
+    background: transparent;
+    border: none;
+    font-size: 24px;
+}
+
+.button:hover{
+    box-shadow: 2.5px 2.5px 2.5px 2.5px gray;
+    transition-duration: 0.4s;
+}
+
+hr{
+    height: 0;
+    background-color: #0073FF;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: 0;
+	border-top: 1px solid #eee;
+}
+
+.content{
+    background-color: white;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px gray;
+}
+
+.normal-box{
+    padding: 15px;
+    background-color: #0073FF;
+    color: white;
+    border-radius: 100px;
+}
+
+.hidden{
+    display: none;
+}
+
+.post-image{
+    width: 100%;
+}
+
+.profile-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.comment{
+    margin: 2.5px;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px gray;
+}
+
+/*Chatbot*/
+
+.chat
+{
+    display: none;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    bottom: -12px;
+    z-index: 1;
+    box-shadow: 5px 5px 13px rgba(91, 81, 81, 0.4);
+    border-radius: 5px;
+}
+
+.open-button
+{
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 75px;
+    height: 75px;
+    z-index: 1;
+}
+
+.close-button{
+    font-size: 32px;
+}
+
+.close-button:hover{
+    cursor: pointer;
+    color: #0073FF;
+    transition-duration: 0.4s;
+}
+
+.active
+{
+    padding: 10px;
+    border-radius: 100%;
+    background-color: #4CAF50;
+    position: fixed;
+    bottom: 23px;
+    right: 32px;
+    z-index: 1;
+}
+
+.chatbutton
+{
+    opacity: 0.9;
+}
+
+.chatbutton:hover
+{
+    transition-duration: 0.4s;
+    opacity: 1;
+}
+
+.bot
+{
+  display: none;
+}
+
+@media only screen and (max-width: 529px){
+  .chatbutton, .chat
+  {
+    display: none;
+  }
+  .bot{
+      display: block;
+  }
+}
+
+@media only screen and (max-width: 300px){
+    .bot{
+        margin-left: -40px;
+    }
+}
+
+@media only screen and (max-width: 264px){
+    .bot{
+        margin-left: -45px;
+    }
+    input{
+        width: 100%;
+    }
+}
+
+/**/
+@media only screen and (max-width: 400px){
+    .card{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 332px){
+    .button{
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 255px){
+    .black-text-box, .blue-text-box{
+        background-color: transparent;
+        color: black;
+    }
+    .profile{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .image-post{
+        width: 900px;
+    }
+}
